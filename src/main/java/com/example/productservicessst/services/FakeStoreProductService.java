@@ -69,8 +69,6 @@ public class FakeStoreProductService implements ProductService{
 
     @Override
     public product getSingleProduct(Long id) {
-//        throw new ProductNotFound();
-
         FakeStoreProductDto fakeStoreProductDto =  restTemplate.getForObject(
                 "https://fakestoreapi.com/products/" + id,
                 FakeStoreProductDto.class
