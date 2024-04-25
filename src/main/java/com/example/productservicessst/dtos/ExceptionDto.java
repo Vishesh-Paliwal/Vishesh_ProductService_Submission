@@ -1,4 +1,4 @@
-package com.sst.productservicesst.dtos;
+package com.example.productservicessst.dtos;
 
 import lombok.Getter;
 import lombok.Setter;
