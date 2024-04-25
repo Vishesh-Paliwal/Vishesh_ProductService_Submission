@@ -27,20 +27,6 @@ public class ProductController {
 
     @GetMapping("/products/{id}")
     public product getSingleProduct(@PathVariable("id") Long id) {
-//        ResponseEntity<product> response = null;
-//        try {
-//            product prod = productService.getSingleProduct(id);
-//            ResponseEntity<product> responseEntity = new ResponseEntity<>(prod , HttpStatus.OK);
-//        }
-//        catch (RuntimeException exception){
-//            ExceptionDto dto = new ExceptionDto();
-//            dto.setMessage("Id not correct");
-//            dto.setResolution("pass the correct id");
-//            ResponseEntity<ExceptionDto> responseEntity = new ResponseEntity<>(dto,HttpStatus.NOT_FOUND);
-//            return  responseEntity;
-//        }
-//
-//        return response;
         return productService.getSingleProduct(id);
     }
 
